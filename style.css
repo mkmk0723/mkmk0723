@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------------ */
+html {
+    font-size: 100%;
+}
+body {
+    font-family : adobe-clean, 'adobe clean', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
+     'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif,font-family: 'Kosugi Maru', sans-serif;;
+     
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.7;
+    font-size: 1.25rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.section-title {
+  
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Kosugi Maru', sans-serif;
+    
+}
+#top {
+     display: block;
+    text-align: right;
+    color: black;   
+    font-weight: bold;
+    margin-top: 50px;
+    
+}
+#top:hover {
+    color: #888888 ;
+}
+
+/* HEADER
+------------------------------------ */
+header {
+    height: 600px;
+    padding-top: 50px;
+    background-image: url(../images/lucia-macedo-d9_2kPJBG0U-unsplash.jpg) ;
+    background-position: center top;   
+    background-size: cover;
+    background-repeat: no-repeat ;
+
+}
+
+.logo {
+   
+    height: 60px;
+}
+
+#logo {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 2.0rem;
+    text-align: center;
+  
+}
+
+.main-nav {
+    display: flex;
+    margin-top: 50px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 1.25rem;
+    justify-content: center;
+}
+.main-nav a {
+ color: black;   
+}
+.main-nav a:hover {
+    color: #888888;
+    transition: 0.5s;
+}
+.main-nav li:hover{
+    color: #888888;
+    transition: 0.5s;
+}
+.main-nav li {
+    margin-right: 30px;
+}
+
+
+/* BURGER
+----------------------------------------*/
+.burger-btn {
+    display: none;
+}
+
+#nav {
+    background:   #f1e2be;
+    width: 100%;
+    height: 300px;
+    text-align: right;
+    margin-top: 40px;
+    opacity: 0.7;
+    display: none; 
+    padding: 10px;
+}
+#main-nav {
+    padding: 30px;
+}
+#main-nav li {
+    padding: 10px;
+    border-bottom: 1px black solid;
+}
+#main-nav li:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#main-nav li a {
+    color: black;
+}
+
+
+    
+
+/* PROFILE
+----------------------------------- */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+   
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+}
+#profile p {
+    width: 300px;
+    padding-top: 10px;
+}
+
+
+
+/* ABOUT
+------------------------------------- */
+
+#about {
+    padding: 30px;
+    background:   #f1e2be;
+   height: 1fr;
+}
+ #about p{
+     width: 300px;
+     margin: 0 auto;
+ }
+
+
+
+
+ /* LESSON
+ ------------------------------------ */
+ #lesson p{
+     font-size: 1.25rem;
+     text-align: center;
+     margin-bottom: 30px;
+   
+ }
+ .flex-item {
+     display: flex;
+     justify-content: center;
+     
+ }
+ .flex-item .item {
+     margin: 15px 20px 0 50px;
+     font-size: 1.25rem;
+ 
+ }
+
+
+ /* ADDRESS
+ --------------------------------- */
+ #place {
+    padding: 30px;
+    background:   #f1e2be;
+    height: 1fr;
+   
+}
+
+.address {
+     display: flex;
+     justify-content: space-between;
+ }
+
+#contact {
+    cursor: pointer;
+}
+
+.map,.location {
+    padding: 0 5%;
+}
+
+
+ /* FOOTER
+ ------------------------------------ */
+ footer {
+   
+    text-align: center;
+ }
+
+
+
+ /* モバイル版
+ ------------------------------------- */
+ @media all and (max-width: 768px){
+ 
+    /* 共通 */
+    .section-title {
+        margin-top: 20px;
+    }
+    
+    body.noscroll {
+        overflow: hidden;
+    }
+
+    #top {
+        margin-top: 10px;
+    }
+
+    /*HEADER*/
+    .logo { 
+       margin-top: 30px;
+       height: 40px;
+    }
+
+    #logo {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1.25rem;
+        width: 65%;
+        padding-left: 2%;
+       
+        
+    }
+    .main-nav {
+         display: none;
+     }
+     /* BURGER */
+   
+     .burger-btn {
+         display: block;
+         width: 35px;
+         height: 35px;
+         position: relative;
+         border: none;
+         cursor: pointer;
+         top: -4%;
+         float: right;
+         
+     }
+     .bar {     
+         width: 20px;
+         height: 2px;
+         border-radius: 30%;
+         display: block;
+         position: absolute;
+        
+         transition: ease 0.3s;
+         background-color:black;
+     
+     }
+     .bar_top {
+         top: 10px;
+     }
+     .bar_mid {
+         top: 46%;
+      
+     }
+     .bar_bottom {
+         bottom: 10px;
+     }
+
+     .burger-btn.close .bar_top {
+         transform:  rotate(45deg);
+         top: 48%;
+     }
+     .burger-btn.close .bar_mid {
+         opacity: 0;
+         
+     }
+     .burger-btn.close .bar_bottom{
+         transform:  rotate(-45deg);
+         top:48%
+     }
+     
+     /* LESSON */
+   
+    .flex-item {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.125rem;
+    }
+    #lesson p{
+        margin-top: 15px;
+       margin-bottom: 5px;
+    }
+    .item p{
+      font-size: 1.0rem;
+    }
+      
+  
+    /* ADDRESS */
+    .address {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map {
+        margin-top: 30px;
+    }
+    .location p{
+        font-size: 1.125rem;
+    }
+} 
+@media all and (min-width: 768px) {
+    #nav {
+        display: none;
+    }
+    
+}
+
+ /* MODAl
+ ------------------------------------- */
+
+ 
+ .contact-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:  rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    
+ 
+ }
+ .modal {  
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color:white;
+    padding: 30px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+ }
+
+ label {
+    display: block;
+    text-align: left;
+    margin-left: 80px;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+ }
+
+ .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color:   #f1e2be;
+    cursor: pointer;
+  }
+    
+input,textarea{
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+}
+#submit-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    background:   #f1e2be;
+    color: white;
+    font-size: 1.125rem;
+    width: 200px;
+    border-radius: 5px;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+#submit-btn:hover {
+    background-color: #dddddd;
+    color: #888888;
+    transition: 0.5s;
+
+}
+
