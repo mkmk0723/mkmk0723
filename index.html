@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="あんみきバイオリン教室のご案内">
+    <title>あんみきバイオリン教室</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <header id="header" class="wrapper">
+       <h1  id="logo"><img src="images/20232.png" alt="" class="logo"> あんみきバイオリン教室</h1>
+       
+      
+       <nav>
+        <ul class="main-nav">
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#about">教室について</a></li>
+            <li><a href="#lesson">レッスン</a></li>
+            <li><a href="#place">所在地</a></li>
+            <li><div id="contact" class="btn">お問い合わせ</div></li>
+        </ul>
+    </nav>
+  
+     <div class="burger-btn">
+      <span class="bar bar_top"></span>
+      <span class="bar bar_mid"></span>
+      <span class="bar bar_bottom"></span>
+     </div><!--/.burger-btn-->
+  
+      
+    
+    <nav id="nav">
+      <ul id="main-nav">
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#about">教室について</a></li>
+          <li><a href="#lesson">レッスン</a></li>
+          <li><a href="#place">所在地</a></li>
+          <li><div id="contact" class="btn">お問い合わせ</div></li>
+      </ul>
+  </nav><!--モバイル版-->
+    
+           
+    </header>
+
+    <div class="contact-modal" id="contact-modal">
+      <div class="modal">
+       
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+       
+          <form action="#" method="POST" name="contact-form">
+         <div>
+             <label for="name">お名前</label>
+             <input type="text" id="name" name="your-name" placeholder="お名前">
+         </div>
+        
+         <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="your-email" placeholder="メールアドレス">
+         </div>
+         <div>
+             <label for="message">メッセージ</label>
+            <textarea id="message" name="your-message" placeholder="お気軽にお問い合わせください"></textarea>
+         </div>
+        
+         <div id="submit-btn" class="btn">送信する</div>
+           
+       </form>
+      </div><!--/.modal-->
+    </div><!--/.contact-modal-->
+   
+    <main>
+        <div id="profile" class="wrapper">
+            <h2 class="section-title">プロフィール</h2>
+           <div class="flex-container">
+             <img src="images/lucia-macedo-d9_2kPJBG0U-unsplash.jpg" alt="プロフィール写真">
+             <p>プロフィールについてプロフィールについてプロフィールについてプロフィールについてプロフィールについて</p>
+           </div>
+           <div>
+             <a id="top" href="#header">TOPへ</a>
+           </div>
+        </div><!--/#plofile-->
+
+        <div id="about" class="about wrapper">
+            <h2 class="section-title">教室について</h2>
+            <p>教室について記入教室について記入教室について記入教室について記入教室について記入教室について記入</p>
+　  　　　<a id="top" href="#header">TOPへ</a>
+        </div><!--#about-->
+
+        <div id="lesson" class="wrapper">
+            <h2 class="section-title">レッスン</h2>
+            <div class="lesson-course">
+                 <p>♬３０分レッスン♬</p>
+                <div class="flex-item">
+                  <p class="item">月２回/○○○円</p>
+                  <p class="item">月３回/○○○円</p>
+                  <p class="item">月４回/○○○円</p>
+                </div>
+            </div>
+           
+                <div class="lesson-course">
+                    <p>♬４５分レッスン♬</p>
+                   <div class="flex-item">
+                     <p class="item">月２回/○○○円</p>
+                     <p class="item">月３回/○○○円</p>
+                     <p class="item">月４回/○○○円</p>
+                   </div>
+               </div>
+            
+            
+                <div class="lesson-course">
+                    <p>♬６０分レッスン♬</p>
+                   <div class="flex-item">
+                     <p class="item">月２回/○○○円</p>
+                     <p class="item">月３回/○○○円</p>
+                     <p class="item">月４回/○○○円</p>
+                   </div>
+               
+            </div>
+　　　　　　<a id="top" href="#header">TOPへ</a>
+        </div><!--/#lesson-->
+
+        <div id="place"class="wrapper">
+            <h2 class="section-title">所在地</h2>
+         <div class="address">
+               <div class="location">
+                   <p>
+                       住所　　：○○県○○市北町１－５</br>
+                       電話番号：１２３－４５６７－８９０</br>
+                       E-mail　: mkmk0723@gmail.com
+                   </p>
+
+               </div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26149.41813485847!2d138.43484230649946!3d34.98974780206264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10513f300bfce4ae!2z6Z2Z5bKh55yM56uL576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1614113187747!5m2!1sja!2sjp" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              
+         </div><!--/.address-->
+         　<a id="top"  href="#header">TOPへ</a>
+          
+          
+        </div>   
+       <!--/#place-->
+    </main>
+
+    <footer class="wrapper">
+        <p><small>&copy;2021 annemiki723</small></p>
+    </footer>
+    <script src="jquery/script.js"></script>
+</body>
+</html>
