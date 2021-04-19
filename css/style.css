@@ -213,6 +213,24 @@ header {
     padding: 0 5%;
 }
 
+#page_top_icon {
+    width: 50px;
+    border-radius: 50%;
+}
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+  }
+
+  .updown {
+    animation: updown 1s infinite ease-in-out alternate;
+  }
+  
+  @keyframes updown {
+    0% {transform: translateY(-5px)}
+    100% {transform: translateY(5px);}
+  }
 
  /* FOOTER
  ------------------------------------ */
